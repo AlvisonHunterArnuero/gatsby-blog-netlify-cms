@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: AlvisonHunterArnuero/gatsby-blog-netlify-cms
+media_folder: content/assets
+public_folder: ../assets
+
+collections:
+  - name: blog
+    label: Blog
+    folder: content/blog
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: body, label: Body, widget: markdown }
